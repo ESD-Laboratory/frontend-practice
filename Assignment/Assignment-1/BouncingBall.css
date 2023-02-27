@@ -1,1 +1,86 @@
 /* Your code here */
+:root {
+  --pink-color: #ffc0cb;
+  --bg-color: #123;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-color);
+}
+
+.container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin-top: 200px;
+  margin-left: 600px;
+}
+
+.container::before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 10px;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  background: #555;
+  border-radius: 50%;
+  animation: shadowAnimation 1.6s infinite;
+}
+
+@keyframes shadowAnimation {
+  25% {
+    width: 50px;
+    height: 10px;
+  }
+  50% {
+    width: 57px;
+    height: 10px;
+  }
+  75% {
+    width: 50px;
+    height: 10px;
+  }
+}
+
+.container .ball {
+  position: relative;
+  margin: 0 auto;
+  height: 50px;
+  width: 50px;
+  top: 0;
+  background: var(--pink-color);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--pink-color), 0 0 30px var(--pink-color);
+  animation: ballAnimation 1.6s infinite;
+}
+
+@keyframes ballAnimation {
+  5% {
+    height: 50px;
+    width: 50px;
+  }
+  20% {
+    height: 60px;
+  }
+  30% {
+    height: 45px;
+    width: 60px;
+  }
+  50% {
+    height: 57px;
+    width: 35px;
+    transform: translateY(245px);
+  }
+  75% {
+    height: 50px;
+    width: 50px;
+  }
+}
