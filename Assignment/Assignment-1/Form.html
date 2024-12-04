@@ -1,16 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./Form.css">
-</head>
-<body>
-  <h1>Form Registrasi</h1>
-  <form action="">
-    <!-- Your code here -->
-  </form>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="Form.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="tittle">Registration Form</div>
+      <div class="form">
+        <div class="input_field">
+          <label for="">Name</label>
+          <input type="text" class="input" />
+        </div>
+        <div class="input_field">
+          <label for="">Email</label>
+          <input type="email" class="input" />
+        </div>
+        <div class="input_field">
+          <label for="">Address</label>
+          <input type="text" class="input" />
+        </div>
+        <div class="input_field">
+          <label for="">Gender</label>
+            <input type="radio" class="choose" name="gender" value="jenis kelamin" />
+            <label for="Laki-laki">Laki-laki</label> 
+            <input type="radio" class="choose" name="gender" value="jenis kelamin" />
+            <label for="Perempuan">Perempuan</label>
+        </div>
+        <div class="input_hobby">
+          <label for="">Hobby</label>
+          <input type="checkbox" class="input"/> Membaca <input type="checkbox" class="input" /> Menulis <input type="checkbox" class="input" /> Menggambar
+        </div>
+        <div class="input_field">
+          <label for="">Bio</label>
+          <textarea class="input"></textarea>
+        </div>
+        <div class="input_field">
+          <input type="submit" class="button" />
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
